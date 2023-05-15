@@ -19,4 +19,23 @@ public class DBManager {
     public static List<Item> getItems(){
         return items;
     }
+
+    public static void addItem(Item item){
+        item.setId(items.size()+1L);
+        items.add(item);
+    }
+
+    public static Item getItemById(Long id){
+        return items.stream()
+                .filter(item -> item.getId() == id)
+                .findAny()
+                .orElse(null);
+
+//        for(Item item : items){
+//            if(item.getId() == id){
+//                return item;
+//            }
+//        }
+//        return null;
+    }
 }
