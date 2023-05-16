@@ -5,43 +5,43 @@
 
 <div class="container col-6 mx-auto" layout:fragment="content">
 
-  <form th:action="@{'/addItem'}" method="post">
+  <form th:action="@{'/addStudent'}" method="post">
     <div class="row">
       <div class="col-12 mt-3">
-        <label>Product name:</label>
+        <label>Student name:</label>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <input type="text" class="form-control" name="name">
+        <input type="text" class="form-control" name="name" placeholder="Insert name:">
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 mt-3">
-        <label>Description:</label>
+        <label>Surname:</label>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <input type="text" class="form-control" name="description">
+        <input type="text" class="form-control" name="surname" placeholder="Insert surname:">
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 mt-3">
-        <label>Price:</label>
+        <label>Exam:</label>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <input type="number" class="form-control" name="price">
+        <input type="number" class="form-control" name="exam" placeholder="Insert exam:">
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 mt-3">
-        <button class="btn btn-success">Add Product</button>
+        <button class="btn btn-success">Add Student</button>
       </div>
     </div>
   </form>
